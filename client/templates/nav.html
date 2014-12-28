@@ -11,10 +11,25 @@
       <div class='collapse navbar-collapse' id='nb-collapse-1'>
 
         <ul class='nav navbar-nav'>
+        {{#if currentUser}}
+
+          <!-- List items here are only visible to logged in users -->
+
           <li class='active'><a href='#'>
             Link <span class='sr-only'>(current)</span></a></li>
           <li><a href='#'>Link</a></li>
+
+        {{else}}
+
+          <!-- Items here are only visible to users who are not logged in. -->
+
+        {{/if}}
+
+        <!-- Items here are visible to both. -->
+
         </ul>
+
+        <!-- These items are right aligned. -->
 
         <ul class='nav navbar-nav navbar-right'>
           {{> navbarLoginButtons}}
