@@ -16,7 +16,10 @@
           <li><a href='#'>Link</a></li>
         </ul>
 
-        {{> navbarLoginButtons}}
+        <ul class='nav navbar-nav navbar-right'>
+          {{> navbarLoginButtons}}
+          {{> serverStatus}}
+        </ul>
 
       </div> <!-- .navbar-collapse -->
     </div> <!-- .container-fluid -->
@@ -60,7 +63,7 @@
 </template>
 
 <template name='navbarLoginButtons'>
-  <div class="nav navbar-nav navbar-right">
+  <div class='nav navbar-nav navbar-right'>
     {{> loginButtons}}
   </div>
 </template>

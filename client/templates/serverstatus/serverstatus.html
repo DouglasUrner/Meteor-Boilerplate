@@ -1,0 +1,32 @@
+<template name='serverStatus'>
+	<li>
+		<!-- Status indicator button -->
+		<button type="button" class="btn btn-default btn-sm"
+			data-toggle="modal" data-target="#serverStatusModal">
+			<span class='glyphicon {{serverStatusIcon}}'></span>
+		</button>
+
+		<!-- Status details modal -->
+		<div class="modal fade" id="serverStatusModal" tabindex="-1" role="dialog"
+			aria-labelledby="serverStatusModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="serverStatusModalLabel">
+							Server Status
+						</h4>
+					</div>
+					<div class="modal-body">
+						{{serverStatusMessage}}
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Dismiss
+						</button>
+					</div>
+				</div>
+			</div>
+		</div> <!-- .serverStatusModal -->
+
+	</li>
+</template>
