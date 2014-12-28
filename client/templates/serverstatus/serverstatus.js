@@ -17,7 +17,22 @@ Template.registerHelper('serverStatusIcon', function () {
 	}
 });
 
-Template.registerHelper('serverStatusMessage', function () {
+Template.registerHelper('serverShortStatusMessage', function () {
+	var status = Meteor.status();
+	if (status.connected) {
+		return 'Connected';
+	} else {
+		if (status.status === 'connecting') {
+			return 'Attempting to connect';
+		} else if (status.status === 'waiting') {
+			return 'Waiting to retry connection';
+		} else {
+			return 'Connection failed';
+		}
+	}
+});
+
+Template.registerHelper('serverLongStatusMessage', function () {
 	var status = Meteor.status();
 	if (status.connected) {
 		return 'Connected';
