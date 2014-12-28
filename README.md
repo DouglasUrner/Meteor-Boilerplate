@@ -7,7 +7,7 @@ A simple skeleton for Meteor applications.
 
 * [iron:router]() –
 * [nemo64:bootstrap](https://github.com/Nemo64/meteor-bootstrap) –
-* [less]() – Bootstrap (as of 3.3.1_1) needs less, but does not include it.
-* []() –
-* []() –
+	* [less]() – Bootstrap (as of 3.3.1_1) needs less, but does not include it.
+* [accounts-password]() –
+* [mrt:accounts-ui-bootstrap-3]() –
 * []() –
