@@ -28,3 +28,4 @@ Feedback, pull requests, issues are all welcome.
 
 * [alanning:roles](https://github.com/alanning/meteor-roles) –
 * [useraccounts:bootstrap](https://github.com/meteor-useraccounts/bootstrap) – an alternative to mrt:accounts-ui-bootstrap-3, at first blush it looks like a nice package, but it wasn't easy to get it working.
+* [differential:event-hooks](https://github.com/Differential/meteor-event-hooks) – alternative to using Tracker.autorun() to catch login/out events. Does it catch everything it should? This one is a fork of the original, appears to be slightly more active.
