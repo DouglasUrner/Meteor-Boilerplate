@@ -1,5 +1,5 @@
 <template name='nav'>
-  <nav class='navbar navbar-default navbar-fixed-top'>
+  <nav id='main-navbar' class='navbar navbar-default navbar-fixed-top'>
     <div class='container-fluid'>
       <div class='navbar-header'>
 
@@ -21,6 +21,31 @@
       </div> <!-- .navbar-collapse -->
     </div> <!-- .container-fluid -->
   </nav>
+</template>
+
+<template name='navbarPadding'>
+  <script>
+    /*
+     * Calculate the padding required by .main-navbar – otherwise a navbar
+     * with a class of navbar-fixed-top will overlap the content.
+     *
+     * XXX For some reason the window load function is called before the height
+     * of the navbar is available (at least some of the time) so a default value
+     * (50px) is provided to prevent the overlap.
+     */
+    $(window).resize(function () {
+      $('body').css('padding-top', parseInt($('#main-navbar').css('height')));
+    });
+
+    $(window).load(function () {
+      if (typeof $('#main-navbar').css('height') === 'undefined') {
+        padding = '50px';
+      } else {
+        padding = $('#main-navbar').css('height') + 'px';
+      }
+      $('body').css('padding-top', padding);
+    });
+  </script>
 </template>
 
 <template name='navbarToggleButton'>
