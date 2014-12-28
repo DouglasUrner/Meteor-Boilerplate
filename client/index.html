@@ -1,11 +1,17 @@
 <head>
-  <title>Brand</title>
+  <title></title> <!-- Set via JavaScript below. -->
 </head>
 
 <body>
   <!-- iron:router will put the template declared for the '/' router here. -->
 
   {{> navbarPadding}}
+
+  <script>
+    // Set contents of title tag. This could be changed dynamically.
+    // Other ideas here: http://stackoverflow.com/questions/14036248/meteor-setting-the-document-title
+    document.title = 'Brand';
+  </script>
 
 </body>
 
