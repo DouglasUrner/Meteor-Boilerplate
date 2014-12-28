@@ -1,0 +1,31 @@
+<template name='navbarPadding'>
+	<script>
+		/*
+		 * Calculate the padding required by .main-navbar – otherwise a navbar
+		 * with a class of navbar-fixed-top will overlap the content.
+		 *
+		 * XXX For some reason the window load function is called before the height
+		 * of the navbar is available (at least some of the time) so a default value
+		 * (50px) is provided to prevent the overlap.
+		 */
+		$(window).resize(function () {
+			$('body').css('padding-top', $('#navbar-top').css('height'));
+			$('body').css('padding-bottom', $('#navbar-bottom').css('height'));
+		});
+
+		$(window).load(function () {
+			if (typeof $('#navbar-top').css('height') === 'undefined') {
+				paddingTop = '50px';
+			} else {
+				paddingTop = $('#navbar-top').css('height') + 'px';
+			}
+			if (typeof $('#navbar-bottom').css('height') === 'undefined') {
+				paddingBottom = '50px';
+			} else {
+				paddingBottom = $('#navbar-bottom').css('height') + 'px';
+			}
+			$('body').css('padding-top', paddingTop);
+			$('body').css('padding-bottom', paddingBottom);
+		});
+	</script>
+</template>
