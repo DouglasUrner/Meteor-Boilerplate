@@ -21,7 +21,7 @@ Feedback, pull requests, issues are all welcome.
 * [mrt:accounts-ui-bootstrap-3]() –
 * [aldeed:collection2](https://github.com/aldeed/meteor-collection2) –
 * [aldeed:simple-schema](https://github.com/aldeed/meteor-simple-schema#example) – included by collection2
-* []() –
+* [aldeed:autoform](https://github.com/aldeed/meteor-autoform) –
 
 
 ## Packages To Think About Using
