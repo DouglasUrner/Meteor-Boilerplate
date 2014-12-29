@@ -36,6 +36,13 @@
           {{> serverStatus}}
         </ul>
 
+        <!-- These show up on small (xs) devices, otherwise they are at
+        the bottom of the browser window. -->
+
+        <div class='hidden-lg hidden-md hidden-sm'>
+          {{> fineprint}}
+        </div>
+
       </div> <!-- .navbar-collapse -->
     </div> <!-- .container-fluid -->
   </nav>
