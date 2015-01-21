@@ -6,13 +6,13 @@ Meteor.startup(function () {
 
 	// Initialize database.
 
-	var collection = Collection1;
+	var collection = Items;
 
 	function insertIfEmpty(e, i, a) {
 		collection.insert(e);
 	}
 
-	if (Collection1.find().count() === 0) {
+	if (Items.find().count() === 0) {
 		initialValues.forEach(insertIfEmpty);
 	}
 });
