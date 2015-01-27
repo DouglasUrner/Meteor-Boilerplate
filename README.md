@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/DouglasUrner/Meteor-Boilerplate.png?label=ready&title=Ready)](https://waffle.io/DouglasUrner/Meteor-Boilerplate)
 Meteor-Boilerplate
 ==================
 
