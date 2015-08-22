@@ -32,3 +32,4 @@ Feedback, pull requests, issues are all welcome.
 * [useraccounts:bootstrap](https://github.com/meteor-useraccounts/bootstrap) – an alternative to mrt:accounts-ui-bootstrap-3, at first blush it looks like a nice package, but it wasn't easy to get it working.
 * [differential:event-hooks](https://github.com/Differential/meteor-event-hooks) – alternative to using Tracker.autorun() to catch login/out events. Does it catch everything it should? This one is a fork of the original, appears to be slightly more active.
 * Select2 with autoform
+* [universe:modules](https://github.com/vazco/universe-modules) - support for ES6/ES2015 modules. Module support can help to clean up load order issues. Uses [Babel](https://github.com/babel/babel) to transpile to ES5. [SystemJS]() is also used.
