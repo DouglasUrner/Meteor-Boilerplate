@@ -27,7 +27,9 @@ Feedback, pull requests, issues are all welcome.
 ## Packages To Think About Using
 
 * [meteorhacks:subs-manager](https://github.com/meteorhacks/subs-manager/issues/15´) – subscription caching for use with Iron Router. Helps to eliminate thrashing of subscriptions when switching between pages.
+* [peerlibrary:peerdb](https://github.com/peerlibrary/meteor-peerdb) – Meteor smart package which provides a reactive database layer with references, generators, triggers, migrations, etc.
 * [alanning:roles](https://github.com/alanning/meteor-roles) –
 * [useraccounts:bootstrap](https://github.com/meteor-useraccounts/bootstrap) – an alternative to mrt:accounts-ui-bootstrap-3, at first blush it looks like a nice package, but it wasn't easy to get it working.
 * [differential:event-hooks](https://github.com/Differential/meteor-event-hooks) – alternative to using Tracker.autorun() to catch login/out events. Does it catch everything it should? This one is a fork of the original, appears to be slightly more active.
 * Select2 with autoform
+* [ground:db]() - local caching of collections to support working offline.
